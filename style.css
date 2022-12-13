@@ -202,9 +202,9 @@ section:last-child {
 
 .keySkills {
 	list-style-type: none;
-	-moz-column-count:3;
-	-webkit-column-count:3;
-	column-count:3;
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	column-count:1;
 	margin-bottom: 20px;
 	font-size: 1em;
 	color: #444;
@@ -221,21 +221,3 @@ a{
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
 
-/* Container for skill bars */
-.container {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
-}
-
-.skills {
-    text-align: right; /* Right-align text */
-    padding: 10px; /* Add some padding */
-    color: white; /* White text color */
-}
-
-.html {width: 65%; background-color: #4CAF50;} /* Green */
-.css {width: 50%; background-color: #2196F3;} /* Blue */
-.js {width: 25%; background-color: #808080;} /* Red */
-.csharp {width: 65%; background-color: #4CAF50;} /* Dark Grey */
-.sql {width: 50%; background-color: #808080;} /* Dark Grey */
-.python {width: 15%; background-color: #f44336;} /* Dark Grey */
