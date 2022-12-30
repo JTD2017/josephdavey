@@ -6,19 +6,20 @@
 
 	<meta name="viewport" content="width=device-width" />
 	<meta name="description" content="Joseph Davey Developer Profile." />
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="style.css">
-	<link rel='stylesheet' type='text/css'>
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<link type="text/css" rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" type="text/css" />
 </head>
 
-<body id="top">
+<body id="top" class="dark-mode">
 	<div id="cv">
-		<div class="mainDetails1">
+		<div class="mainDetails">
 			<div id="mypics" class="quickFade">
 				<img src="/myProPic1.jpg" alt="Joseph Davey" id="homePic1" style="width: 35%" />
+				</button>
 			</div>
 
 			<div id="nameAndTitle">
@@ -28,27 +29,59 @@
 
 			<div id="contactDetails" class="quickFade delayFour">
 				<ul>
-					<li>Email: <a href="mailto:joseph4343@hotmail.com" data-rel="external" target="_blank">joseph4343@hotmail.com</a>
+					<li>
+						Email:
+						<a href="mailto:joseph4343@hotmail.com" data-rel="external"
+							target="_blank">joseph4343@hotmail.com</a>
 					</li>
-					<li>linkedin: <a href="https://www.linkedin.com/in/joseph-davey/"
-							target="_blank">www.linkedin.com</a></li>
-					<li>Mobile: +81 07089779553 </li>
+					<li>
+						LinkedIn:
+						<a href="https://www.linkedin.com/in/joseph-davey/"
+							target="_blank">linkedin.com/in/joseph-davey</a>
+					</li>
+					<li><strong></strong>Mobile: +81 07089779553</strong></li>
 				</ul>
 			</div>
 			<div class="clear"></div>
 		</div>
 
-		<div id="wholeNavbar">
-			<div class="mainDetails2">
+		<div id="wholeNavbar" class="wholeNavbar">
 				<nav>
+
+					<button id="DarkBtn" onclick="toggleDarkLight()">Toggle Dark mode</button>
 					<a href="index.html" id="HomeBtn">Home</a>
 					<a href="SoftwarePage2.html" id="SoftwareDevBtn">Software Development</a>
 					<a href="HobbiesPage3.html" id="HobbiesBtn">My Hobbies</a>
 				</nav>
-			</div>
 		</div>
-		<hr id="line2">
+		<hr id="line2" />
 		<div id="mainArea">
+			<section>
+				<article>
+					<div class="sectionTitle">
+						<h2>Personal Profile</h2>
+					</div>
+
+					<div class="sectionContent">
+						<p>
+							I have work experience in a wide range of areas which have given
+							me very good soft and hard skills.
+							<br /><br />
+							I have found my passion to be in software development having studied for two years at
+							Techtorium, five months industry experience at an internship at
+							Aportio Technologies, and almost two years experience as a
+							software developer at Datacom in the Application Assurance team.
+							I have since been in software development for 5 years.
+							<br /><br />
+							I have many major life goals that I strive to achieve through
+							software development where I can create all my ideas for a
+							life-long career.
+						</p>
+					</div>
+				</article>
+				<div class="clear"></div>
+			</section>
+
 			<section>
 				<div class="sectionTitle">
 					<h2>Key Skills</h2>
@@ -62,11 +95,11 @@
 						<li>Web API</li>
 						<li>Azure</li>
 						<li>APM tools (Dynatrace, Splunk)</li>
-						<hr id="line2">
+						<hr id="line2" />
 
 						<li>MSSQL/MySQL/NoSQL (Google Firebase)</li>
 						<li>Version Control (Git, TFS, VSTS)</li>
-						<hr id="line2">
+						<hr id="line2" />
 
 						<li>HTML</li>
 						<li>CSS/SCSS, Material Design</li>
@@ -76,7 +109,7 @@
 						<li>Vue 3 (Quasar)</li>
 						<li>NestJS (REST API app)</li>
 						<li>CMS (Kentico, Drupal)</li>
-						<hr id="line2">
+						<hr id="line2" />
 
 						<li>Google Flutter/Dart</li>
 						<li>Agile/Kanban/CI/CD</li>
@@ -84,13 +117,10 @@
 						<li>Python, Django, Boto3</li>
 						<li>AWS Lambda, CloudWatch</li>
 						<li>Docker, Ngrok</li>
-
 					</ul>
 				</div>
 				<div class="clear"></div>
 			</section>
-
-
 
 			<section>
 				<div class="sectionTitle">
@@ -100,61 +130,52 @@
 				<div class="sectionContent">
 					<article>
 						<h2>Techtorium NZIIT</h2>
-						<p class="subDetails">New Zealand Diploma in Software Development Level 6</p>
-						<p>I graduated from full-time study here and really enjoyed all the different projects we got to work on, some of which can be seen on my <a href="/SoftwarePage2.html">Software</a> page.
+						<p class="subDetails">
+							New Zealand Diploma in Software Development Level 6
+						</p>
+						<p>
+							I graduated from full-time study here and really enjoyed all the
+							different projects we got to work on, some of which can be seen
+							on my <a href="/SoftwarePage2.html">Software</a> page.
 						</p>
 					</article>
 
 					<article>
 						<h2>AMES IT Academy</h2>
-						<p class="subDetails">Diploma in Computing and Network Support Level 5 (CCNA, Microsoft Server
-							2012, CompTIA A+)
+						<p class="subDetails">
+							Diploma in Computing and Network Support Level 5 (CCNA,
+							Microsoft Server 2012, CompTIA A+)
 						</p>
-						<p>I studied here and learnt a lot about the hardware and network side of IT which gives me a
-							better all-round
-							knowledge.</p>
+						<p>
+							I studied here and learnt a lot about the hardware and network
+							side of IT which gives me a better all-round knowledge.
+						</p>
 					</article>
 
 					<article>
 						<h2>Auckland University of Technology</h2>
-						<p class="subDetails">Japanese Diploma/Bachelor of Arts
+						<p class="subDetails">Japanese Diploma/Bachelor of Arts</p>
+						<p>
+							I first began tertiary study here which I obtained skills like
+							critical thinking and communication from various papers.
 						</p>
-						<p>I first began tertiary study here which I obtained skills like critical thinking and
-							communication from various papers.</p>
 					</article>
 				</div>
 				<div class="clear"></div>
 			</section>
-			<section>
-				<article>
-					<div class="sectionTitle">
-						<h2>Personal Profile</h2>
-					</div>
-
-					<div class="sectionContent">
-						<p>I have work experience in a wide range of areas which have given me very good soft and hard skills,
-							and I have found my passion to be in software development having studied for two years
-							at Techtorium, five months industry experience at an internship at Aportio Technologies, and almost two years experience as a software developer at Datacom in the Application Assurance team.
-							I have since been in software development for 5 years.
-							<br><br>
-							I have many major life goals that I strive to achieve through software development
-							where I can create all my ideas for a life-long career.
-						</p>
-					</div>
-				</article>
-				<div class="clear"></div>
-			</section>
-
 		</div>
 	</div>
-	<script type="text/javascript">
-
-
-
-	</script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="myjs.js"></script>
 </body>
 
 </html>

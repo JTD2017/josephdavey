@@ -1,7 +1,7 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
 border:0;
 font:inherit;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Franklin Gothic Large', 'Arial', sans-serif;
 font-size:100%;
 margin:0;
 padding:0;
@@ -20,7 +20,7 @@ display:block;
 }
 
 /*This code keeps the background black and some other stuff*/
-html, body {background: #181818; font-family: helvetica, arial, sans-serif; font-size: 16px; color: rgb(7, 82, 194);}
+html, body {background: #000000; font-family: helvetica, arial, sans-serif; font-size: 16px; color: rgb(7, 82, 194);}
 
 .clear {clear: both;}
 
@@ -28,27 +28,27 @@ p {
 	font-size: 1em;
 	line-height: 1.4em;
 	margin-bottom: 20px;
-	color: rgb(68, 68, 68);
+	color: rgb(0, 0, 0);
 }
 
 #cv {
 	width: 90%;
 	max-width: 800px;
-	background: #FFFFFF;
+	background: #ffffff;
 	margin: 30px auto;
 }
 
 /* Make sure to use this for general proper spacing between everything lol */
-.mainDetails1 {
+.mainDetails {
 	padding: 25px 35px;
-	border-bottom: 2px solid #FFFFFF;
-	background: #FFFFFF;
+	border-bottom: 2px solid #ffffff;
+	background: #ffffff;
 }
 /* This is for the nav section */
-.mainDetails2 {
+.wholeNavbar {
 	padding: 25px 120px;
 	border: 2px solid rgb(255, 255, 255);
-	background: #FFFFFF;
+	background: #ffffff;
 }
 
 #nameAndTitle h1 {
@@ -70,7 +70,7 @@ background-color: #05cf37;
 
 
 
-#HomeBtn,#SoftwareDevBtn,#HobbiesBtn,#ContactBtn{
+#HomeBtn,#SoftwareDevBtn,#HobbiesBtn,#ContactBtn,#DarkBtn{
   display: inline-block;
   border-radius: 4px;
   background-color: #f4511e;
@@ -145,7 +145,7 @@ background-color: #05cf37;
 
 #contactDetails ul li {
 	margin-bottom: 3px;
-	color: #444;
+	color: rgb(0, 0, 0);
 }
 
 #contactDetails ul li a, a[href^=tel] {
@@ -207,7 +207,7 @@ section:last-child {
 	column-count:1;
 	margin-bottom: 20px;
 	font-size: 1em;
-	color: #444;
+	color: rgb(0, 0, 0);
 }
 
 .keySkills ul li {
@@ -221,3 +221,26 @@ a{
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
 
+
+
+/* Dark mode toggle */
+
+ body.dark-mode  {
+	background-color: rgb(18, 20, 20);
+	color: rgb(89, 172, 249);
+	background: #181818;
+	}
+
+ body.dark-mode div {
+	background-color: rgb(24, 26, 27);
+	color: rgb(89, 172, 249);
+	background: #181818;
+	} 
+
+	body.dark-mode p, .ul, .li {
+		color: rgb(189, 183, 175);
+		}
+
+	body.dark-mode #HomeBtn,#SoftwareDevBtn,#HobbiesBtn,#ContactBtn,#DarkBtn,#contactDetails ul li {
+		color: rgb(232, 230, 227);
+		} 
